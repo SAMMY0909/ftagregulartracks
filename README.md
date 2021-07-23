@@ -12,7 +12,6 @@ git checkout release/22.6.3
 git atlas addpkg BTagging
 #git atlas addpkg JetTagTools
 cd ..
-tar xfz /afs/cern.ch/work/k/khanov/public/combineTracks/setup_patch.tgz
-#tar xfz /afs/cern.ch/work/k/khanov/public/combineTracks/combined_patch.tgz
+\cp -r setuppatch/athena .
 source scripts/setup.sh
 ```
