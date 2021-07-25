@@ -1,4 +1,4 @@
-Authors: Alexander Khanov, Soumyananda Goswami
+Authors: Alexander & Khanov, Soumyananda Goswami
 with inputs from FTAG package maintainers, the CERN ATLAS Codebase, GitLab ATLAS Software Tutorials (https://atlassoftwaredocs.web.cern.ch/ABtutorial/), xAOD mini Derivation Tutorials (https://twiki.cern.ch/twiki/bin/viewauth/AtlasComputing/XAODMiniTutorialDerivations) and members of the Flavour Algorithms group
 
 To setup the package, carry out these commands in succession.
