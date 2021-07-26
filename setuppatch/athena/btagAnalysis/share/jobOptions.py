@@ -24,11 +24,13 @@ from AthenaCommon.AthenaCommonFlags import jobproperties as jp
 #jp.AthenaCommonFlags.SkipEvents.set_Value_and_Lock(16400)
 jp.AthenaCommonFlags.EvtMax.set_Value_and_Lock(-1)
 
-inputfiles = [
+inputfiles = glob.glob('/eos/atlas/atlascerngroupdisk/perf-flavtag/calib/negtag/directag/user.khanov.valid1.410000.PhPy8EG_s3227_r12581_combinedtracks_ie_EXT0/*.root',recursive=True)
+#[
   #'/afs/cern.ch/work/k/khanov/public/valid1.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.recon.AOD.e4993_s3227_r12581/AOD.25384333._000688.pool.root.1'
-  '/afs/cern.ch/work/k/khanov/public/combineTracks/data/DAOD_TEST1.test.pool.root'
+#  '/afs/cern.ch/work/k/khanov/public/combineTracks/data/DAOD_TEST1.test.pool.root'
    #'AOD.pool.root'
-]
+#]
+
 
 # New-style config to fix https://its.cern.ch/jira/browse/ATR-22504
 jp.AthenaCommonFlags.FilesInput = inputfiles
@@ -181,7 +183,7 @@ for JetCollection in JetCollections:
   ###SoftMuonTagger
   alg.SoftMuoninfo = False
   ## b and c hadron truth info
-  alg.bHadInfo = False
+  alg.bHadInfo = True
   alg.bHadExtraInfo = False #include all b and c decay products, and trk_origin
   ## kshort
   alg.kshortInfo = False
