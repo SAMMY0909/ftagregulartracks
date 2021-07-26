@@ -28,6 +28,7 @@ cd ftag_regulartracks
 cd ..
 rm -rf ftag_regulartracks
 \cp -r setuppatch/athena .
+\cp -r setuppatch/scripts .
 rm -rf setuppatch
 source scripts/setup.sh
 ```
