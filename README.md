@@ -21,7 +21,6 @@ git clone https://:@gitlab.cern.ch:8443/sgoswami/ftag_regulartracks.git
 cd ftag_regulartracks
 \cp -r each_login.sh ../
 \cp -r README.md ../
-\cp -r scripts ../
 \cp -r setuppatch ../
 
 cd ..
